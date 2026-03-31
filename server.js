@@ -144,5 +144,5 @@ app.post('/api/heartbeat', (req, res) => res.json({ success: true }));
 // --- ARRANQUE ---
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🚀 SERVIDOR ACTIVO EN: http://137.184.147.9:${PORT}`);
+    console.log(`🚀 SERVIDOR ACTIVO EN: http://104.248.236.242:${PORT}`);
 });
