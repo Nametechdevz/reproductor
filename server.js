@@ -134,4 +134,6 @@ app.post('/api/logout', (req, res) => { req.session.destroy(); res.json({ succes
 app.post('/api/heartbeat', (req, res) => res.json({ success: true }));
 
 const PORT = 3000;
-app.listen(PORT, () => console.log(`🚀 Motor MegaTV en http://localhost:${PORT}`));
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Servidor en puerto ${PORT}`);
+});
